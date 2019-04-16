@@ -18,10 +18,6 @@ import android.widget.Toast
 import android.webkit.WebViewClient
 
 
-
-
-
-
 class WebViewElectronicCity : AppCompatActivity() {
     private var awvElCty: TouchyWebView? = null
 

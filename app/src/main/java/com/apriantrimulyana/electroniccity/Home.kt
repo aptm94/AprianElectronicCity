@@ -34,7 +34,6 @@ class Home : AppCompatActivity() {
             val moveBalikNama = Intent(this@Home, BalikNama::class.java)
             startActivity(moveBalikNama)
         })
-
     }
 
     private fun check_jumlah_data(){

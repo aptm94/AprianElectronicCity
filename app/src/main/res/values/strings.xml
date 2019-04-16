@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ElectronicCity</string>
+
+    <string name="order">Order</string>
+    <string name="lorem_resum">Lorem Resum</string>
+    <string name="calc">Calc</string>
+    <string name="result">Result :</string>
+    <string name="masukkan_jumlah_bintang">Masukkan Jumlah *</string>
+    <string name="satu">1. </string>
+    <string name="dua">2. </string>
+    <string name="tiga">3. </string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="balik">Balik</string>
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailBarang">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent" >
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_toLeftOf="@+id/rl_keranjang"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_keranjang"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/IVbucket2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/icon_keranjang"
+                    tools:ignore="VectorDrawableCompat" />
+                <TextView
+                    android:id="@+id/tv_jumlah_data"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="12dp"
+                    android:text="12"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:layout_above="@+id/bt_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img_produk"
+                android:layout_width="match_parent"
+                android:minHeight="170dp"
+                android:layout_height="200dp"
+                android:src="@drawable/loading_img2"
+                android:scaleType="fitXY"/>
+            <!--<ImageView
+                android:id="@+id/img_produk"
+                android:layout_width="match_parent"
+                android:minHeight="170dp"
+                android:layout_height="200dp"
+                android:contentDescription="TODO"
+                android:scaleType="fitXY" />-->
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_dl_nama_produk"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/black"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_resum"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/bt_order"
+        android:layout_margin="10dp"
+        android:textColor="#FFF"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:text="@string/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
